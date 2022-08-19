@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<h>Vamos vê se vc tem sorte </h>
+<input/>
+<button> Qual o seu palpite da sorte ?</button>
+
+<script>
+
+
+	 var frutas = ["maça","laranja","pera"];
+	 var input = document.querySelector("input");
+	 input.focus();
+
+function efruta(){
+	var achou = false;
+	for(var contador = 0 ; contador < frutas.length;contador ++){
+		if(input.value == frutas[contador]){
+			alert (" voce acertou a fruta");
+			achou=true;
+			break;	
+		}
+	} if(achou ==false){
+		alert ("voce errou a fruta");
+	}
+}	
+
+input.value="";
+ input.focus();
+ 
+var button = document.querySelector("button");
+button.onclick=efruta; 
+
+
+	
+
+</script>

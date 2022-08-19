@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script >
+	
+function pulalinha(){
+		document.write("<br>");
+	}
+	function mostra(frase){
+		document.write(frase);
+		pulalinha();
+	}
+	
+
+	var nome = prompt("nome do seu time");
+	var vitorias = prompt("qual o numero de vitorias do seu time :");
+	var vitoria= parseInt(vitorias);
+	var empates= prompt(" qual o numero de empates do seu time:");
+	var empate= parseInt(empates);
+
+	var pontos = vitoria*3 + empate;
+
+	mostra(nome +" esta com "+ pontos + " pontos");
+
+	if ( pontos< 28){
+		mostra(" seu time esta pior que o ano passado ");
+	} else { mostra("seu time esta melhor que o ano passado");
+}
+
+
+
+
+
+
+
+
+	</script>
